@@ -1,0 +1,186 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[10pt, letterpaper]{awesome-cv}
+\geometry{left=0.6in, right=0.6in, top=0.5in, bottom=0.54in, footskip=0.15in}
+\input{config}
+
+%%% Override color
+% Awesome Colors: 
+% awesome-emerald, awesome-skyblue, 
+% awesome-red, awesome-pink,
+% awesome-orange, awesome-nephritis,
+% awesome-concrete, awesome-darknight
+
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%%%%%%% COMMANDS
+\newcommand{\col}{awesome-red}
+\colorlet{awesome}{\col}
+\newcommand{\altcol}{\textcolor{\col!50!black!90!}}
+\newcommand{\regcol}{\textcolor{\col}}
+
+
+% overwrite the forced font size for SKILL
+\renewcommand*{\skilltypestyle}[1]{{\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\bodyfont\color{text} #1}}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+
+
+%%% Override a separator for social informations in header(default: ' | ')
+% \headersocialsep[\quad\textbar\quad]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Xander}{Ge}
+% \address{}
+\mobile{+1 (262) 232-0009} 
+%%% Social
+\email{ag4350@columbia.edu}
+% \homepage{gexand.github.io}
+\github{GeXand}
+\linkedin{XanderGe}
+
+%%% Optionals
+% \position{Aspiring Software Engineer {\enskip\cdotp\enskip} Data Scientist}
+% \quote{"AAAAA."}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Xander Ge} % ~~~·~~~ \href{http://gexand.github.io}{http://gexand.github.io}}
+  {\thepage}
+
+\begin{document}
+\makecvheader
+\vspace*{-2mm}
+\begin{minipage}[t]{0.5\textwidth}
+\cvsection{Education}
+\begin{cventries}
+    \cvundergrad
+        {Columbia University --- \normalsize{Expected May 2024}}
+        {Bachelor of Science (GPA: 4.0)}
+        {Computer Science, Major}
+        {Applied Mathematics, Minor}
+        {Political Science, Minor}
+    \cvgrad
+        {Brookfield East High School --- \normalsize{2016-2020}}
+        {Unweighted GPA: 4.0, Weighted GPA: 4.913}
+        {Dual Enrollment: Marquette University, UW-Milwaukee}
+\end{cventries}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\cvsectionline \bodyfont 
+\vspace*{-0.5ex}
+\cvsubsection{\color{black}Relevant Coursework:}
+
+\vspace*{-3ex}
+Multivariable Calculus
+\sep Linear Algebra \& Differential Equations
+\sep Data Structures
+\sep Algorithms
+\sep Computational Linear Algebra*
+
+\vspace*{0.5em}
+\begin{flushright}
+    \small * = Spring 2021
+\end{flushright}
+\vspace*{-2em}
+\end{minipage}
+
+\cvsection{Technical Skills}
+\begin{technicalskills}
+    \techskill{\regcol{Languages}}{
+        Java, \ Python, \ HTML/CSS/JS, \ SQL (Postgres), \ Shell Scripting (BASH)
+    }
+    \techskill{\regcol{Technology}}{
+        Git, \ LaTeX, \ Jupyter, \ AWS (RDS, Elastic Beanstalk), \ Arduino, \ Processing
+    }
+\end{technicalskills}
+
+\cvsection{Experience}
+\begin{cventries}
+
+    \cventry
+        {Software Engineering Intern}
+        {Babo}
+        {New York, NY}
+        {Nov. 2020--Now}
+        {\begin{cvitems}
+            \item aimed at encouraging sustainability in baby clothing usage
+            \item Build subscription-based e-commerce platform and inventory management system
+        \end{cvitems}}   
+        
+    \cventry
+        {Data Science Lab Intern}
+        {University of Wisconsin, Milwaukee}
+        {Milwaukee, WI}
+        {Jun.--Aug. 2019}
+        {\begin{cvitems} 
+            \item Scraped web forums for discussions on opioid addiction recovery, deidentified posts
+            \item Manually labeled datasets and refined annotation guidelines
+            \item Prepared data for sentiment analysis
+        \end{cvitems}}
+    
+    \cventry
+        {Full Stack Web Development Intern}
+        {SafeNet Consulting | Life Navigators}
+        {Milwaukee, WI}
+        {Jun.--Aug. 2018}
+        {\begin{cvitems} 
+            \item Developed ASP.NET Core web application to manage client and employee data
+        \end{cvitems}}
+        
+
+\end{cventries}
+
+%\vspace*{-1ex}
+%\cvsection{Projects}
+%\vspace*{-2ex}
+%\begin{projects}
+%    % \project {Name}
+%    % {Tools/Languages}
+%    % {Description}
+%    % {Link}
+%    % {(Link Name)}   
+%        
+%\end{projects}
+
+\vspace*{-1ex}    
+\cvsection{Leadership \& Activities}
+\vspace*{-2ex}    
+\begin{skills}
+    \skill{Founder + President, !ScriptKiddies --
+    (\href{http://DotDataScience.org}{\textit{script-kiddies.org}}) \\}
+    {\vspace*{-2.5ex}
+    \begin{itemize}[noitemsep, label=\bullet]
+        \item Formed organization devoted to expanding computer science education, free of charge or prerequisites
+        \item Lead yearly summer camp, individually tutor students, and advocate for computer science education at local and state level
+    \end{itemize}
+    \vspace*{-3.5ex}}
+    
+    \skill{Columbia Build Lab}
+	{Develop software for early-stage startups in partnership with Columbia Business School}
+\end{skills}
+
+\end{document}
